@@ -1,12 +1,15 @@
-let w = 400
-let h = 600
+const canvasWidth = 600
+const canvasheight = 600
 
 function setup() {
-  createCanvas(w, h);
+  createCanvas(canvasWidth, canvasHeight);
+  console.log (canvasWidth/2);
+  canvasWidth +=1;//adds one to the variable 
+  console.log (canvasWidth);
 }
 
 function draw() {
-  background(125);
+  background( random (255));
   fill("orange");
   stroke ("white");
   beginShape (TESS);
